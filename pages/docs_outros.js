@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Head from 'next/head'
 import Bar from '../components/bar'
 import Footer from '../components/footer'
-import { Container } from 'react-bootstrap'
+import { Container, Jumbotron } from 'react-bootstrap'
 
 function Docs_Outros(){
     return(
@@ -12,20 +12,15 @@ function Docs_Outros(){
                 <meta name = 'description' content = 'site de ... sobre ...' />
                 <meta name = 'author' content = 'Oséias' />
             </Head>
+            
             <Bar/>
             
-            <div className = 'display-4 text-center'>
-                <h1 className = 'display-4'>Baixe alguns arquivos relevantes</h1>
-                <p className = 'lead text-justify'>
-                </p>
-            </div>
-
-            <Container className = 'row' id = 'center'>
-                <style>{ '#center{ width: 90rem; position: absolute; top: 50%; left: 55%; margin-right: -50%; transform: translate(-50%, -50%);  }' }</style>
+                <h1 className = 'display-4 text-center'>Baixe alguns arquivos relevantes</h1>
+                
+            <Container className = 'col'>
                 
                     
-                        <div className = 'col' id = 'trans'>
-                            <style>{ '#trans{ background-color: #fff;  }' }</style>
+                        <Jumbotron>
                             <div>
                                 <h2>Apresentação do Curso</h2>
                                 <p><a className="btn btn-secondary" href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=6317924&key=a31c23b14d5d8950ce28d8cda7807d6c">Baixe PDF </a></p>
@@ -35,8 +30,8 @@ function Docs_Outros(){
                                 <p><a className="btn btn-secondary" href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=6317915&key=300ba6bebacf53bae709c86d9662d6b9">Baixe PDF </a></p>
                             </div>
                             
-                        </div>
-                        <div className = 'col' id = 'trans'>
+                        </Jumbotron>
+                        <Jumbotron>
                             
                             <div>
                                 <h2>Modelo de TCC</h2>
@@ -46,10 +41,11 @@ function Docs_Outros(){
                                 <h2>Orientações Sobre TCC</h2>
                                 <p><a className="btn btn-secondary" href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=7365500&key=07fdfb60df3c137b305a22d9274833b2">Baixe PDF </a></p>
                             </div>
-                        </div>
+                        </Jumbotron>
                     
             </Container>
-            <div className = 'text-center fixed-bottom'>
+            <div className = 'text-center' id = 'rodape'>
+            <style>{ '#rodape{ position: relative; bottom: 0; width: 100%; margin: auto auto; top: 4rem; }' }</style>
                 <Footer />
             </div>
         </div>

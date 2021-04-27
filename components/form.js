@@ -58,7 +58,7 @@ function Form(){
     }
 
     return(
-        <div id = 'form'>
+        <div id = ''>
             <style>{ '#form{ position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%) }' }</style>
             <h3 className = 'text-center bold'>Cadastro</h3>
             <form onSubmit = { handleSubmit }>
@@ -66,7 +66,7 @@ function Form(){
                     <input
                         type = 'text'
                         className = 'form-control'
-                        placeholder = '1° nome'
+                        placeholder = 'nome'
                         id = 'name'
                         name = 'nome'
                         value = { name }

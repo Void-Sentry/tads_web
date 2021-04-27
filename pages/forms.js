@@ -13,14 +13,14 @@ function Forms(){
                 <meta name = 'author' content = 'Oséias' />
             </Head>
             <Bar/>
-            <div fluid className = 'cover-container d-flex h-100 p-3 mx-auto flex-column' id = 'root'>
+            <div className = ''>
             
                 <style>{'.root{ color: #fff; text-shadow: 0 0.05rem .1rem rgba(0, 0, 0, .5); box-shadow: inset 0 0 5rem rgba(0, 0, 0,) }'}</style>
                 <Form>
-                    A
                 </Form>
             </div>
-            <div className = 'text-center fixed-bottom'>
+            <div className = 'text-center' id = 'rodape'>
+            <style>{ '#rodape{ position: relative; bottom: 0; width: 100%; margin: auto auto; top: 38rem; }' }</style>
                 <Footer />
             </div>
         </>

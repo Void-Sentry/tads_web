@@ -99,7 +99,8 @@ function Pp(){
                     </div>
                 </Jumbotron>
             </div>
-            <div className = 'text-center fixed-bottom'>
+            <div className = 'text-center' id = 'rodape'>
+            <style>{ '#rodape{ position: relative; bottom: 0; width: 100%; margin: auto auto; top: 4rem; }' }</style>
                 <Footer />
             </div>
         </div>
